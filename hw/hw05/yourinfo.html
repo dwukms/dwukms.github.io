@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title> Your information </title>
+    <style>
+        body{
+            font-family:Do Hyeon
+        }
+        .next{
+            font-size:25px
+        }
+        h1{
+            font-size:40px
+        }
+        hr{
+            background-color: pink;
+            width:60%;
+            height:10px;
+        }
+        h2{
+            font-size:35px
+        }
+        fieldset{
+            width:30%; 
+            font-size:20px
+        }
+        .menu{
+            font-size: 22px
+        }
+        h3{
+            font-size:24px
+        }
+        iframe{
+            width:600px; 
+            height:350px
+        }
+    </style>
+</head>
+<body>
+    <a href="./home.html"><span class="next">< Back to home</span></a>
+    <header>
+        <center>
+            <h1>Your information</h1>
+        </center>
+        <hr></hr>
+    </header>
+        <center>
+            <h2>Enter your information.</h2>
+        </center>
+        <center>
+            <form>
+                <fieldset>
+                    <legend>당신의 정보를 입력해주세요.</legend>
+                    <p>이름: <input type="text" name="name"></p>
+                    <p>학교: <input type="text" name="school"></p>
+                    <p>학과: <input type="text" name="major"></p>
+                    <p>성별: <input type="radio" name="sex" value="female" checked>여자
+                        <input type="radio" name="sex" value="male">남자
+                    </p>
+                    <p>이 정보를 입력하는 날짜를 입력해주세요.<input type="date" name="today"></p>
+                    <input type="submit" value="제출">
+                    <input type="reset" value="다시작성">
+                </fieldset>
+            </form>
+        </center>
+        <center>
+            <h3>동덕여자대학교 학생이거나 동덕여자대학교에 관심이 있으신가요?</h3>
+            <div>
+                <span>
+                    <a href="https://www.dongduk.ac.kr/kor/intro/human.do" target="a" title="about dongduk">
+                        <span class="menu">동덕여대 소개</span></a>/
+                </span>
+                <span>
+                    <a href="./introdongduk.html" target="a" title="dongduk campus">
+                        <span class="menu">동덕여대 캠퍼스투어 영상</span></a>/
+                </span>
+                <span>
+                    <a href="./dongduktip.html" target="b" title="dongduk tip">
+                        <span class="menu">동덕여대 꿀팁</span></a>
+                </span>
+            </div>
+            </p>
+            <iframe src="basic.html" name="a" frameborder="10"></iframe>
+            <iframe src="basic.html" name="b" frameborder="10"></iframe>
+        </center>
+</body>
+</html>
