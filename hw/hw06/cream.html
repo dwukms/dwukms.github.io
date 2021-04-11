@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cream</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <style>
+        @media(max-width:768px){
+            body{
+                display: none;
+            }
+        }
+        body{
+            margin:0;
+        }
+        h1{
+            font-size:40px;
+            font-family: 'Pacifico', cursive;
+            float:left;
+            margin:30px 10px 22px 10px;
+            padding:5px;
+        }
+        .info{
+            font-family: 'Nanum Gothic Coding', monospace;
+            float:right;
+            margin-top:25px;
+            margin-right:15px;
+        }
+        #menu{
+            font-family: 'Noto Sans KR', sans-serif;
+            clear:both;
+            text-align:left;
+            font-size:20px;
+        }
+        #menu ul{
+            list-style-type:none;
+            padding: 5px 0;
+            margin: 0 0 30px 0;
+            border:1.5px solid silver;
+        }
+        #menu li{
+            display:inline;
+            list-style-type:none;
+            color:black;
+        }
+        #item{
+            margin:0 148px 0 148px;
+        }
+        a{ 
+            text-decoration:none;
+            color:black;
+        } 
+        #img{
+            margin:10px;
+            padding:10px;
+            float:left;
+            width:500px;
+            height:400px;
+        }
+        .button{
+            margin-top:15px;
+        }
+        .price{
+            padding:10px 20px 10px 20px;
+            margin:10px 20px 10px 20px;
+        }
+        #select{
+            padding:20px 20px 5px 20px;
+            margin:0 20px 5px 20px;
+        }
+        #head{
+            font-weight: bold;
+            font-size:20px;
+            margin:20px 20px 20px 20px;
+            padding:20px 20px 20px 20px;
+        }
+        #milk {
+            padding-right:600px
+        }
+        #milk li{
+            list-style-type:none;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .button button{
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="./hw06.html">Miso's Homecafe</a></h1>
+    <div>
+        <div class="info"><a href="./shoppinglist.html">장바구니</a>/<a href="./login.html">로그인</a>/<a href="./join.html">
+        회원가입</a></div>
+        <div id="menu">
+            <ul>
+                <li id="item"><a href="./food.html">food</a></li>
+                <li>|</li>
+                <li id="item"><a href="./product.html">product</a></li>
+                <li>|</li>
+                <li id="item"><a href="./customerservice.html">고객센터</a></li>
+                <li>|</li>
+                <li id="item"><a href="./aboutus.html">about us</a></li>
+            </ul>
+        </div>
+        <div id="milk">
+            <ul>
+                <img src="./img/휘핑크림.jpg" id="img">
+                <li id="head"><휘핑크림></li>
+                <li>팜유를 사용한 식물성 크림입니다.
+                    커피나 음료에 올려먹기 좋은 휘핑크림을 찾으신다면
+                    구매해주세요. 최대 한 달정도 보관 가능합니다.
+                </li>
+                <li id="select">
+                    <form>
+                        <label>종류 선택
+                            <select name="cream">
+                                <option>일반 휘핑크림</option>
+                                <option>저칼로리 휘핑크림</option>
+                            </select>
+                        </label>
+                        <p></p>
+                        <label>수량: 
+                            <input type="text" name="number"> 개
+                        </label>
+                    </form>
+                </li>
+                <li id="select">배송 예정일: 주문 후 3-7일 이내</li>
+                <li class="price">가격: 3000won</li>
+                <li class="button">
+                    <form>
+                        <button type="submit">장바구니에 담기</button>
+                        <button type="submit">바로 주문하기</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
