@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <style>
+        @media(max-width:768px){
+            body{
+                display: none;
+            }
+        }
+        body{
+            margin:0;
+        }
+        h1{
+            font-size:40px;
+            font-family: 'Pacifico', cursive;
+            float:left;
+            margin:30px 10px 22px 10px;
+            padding:5px;
+        }
+        .info{
+            font-family: 'Nanum Gothic Coding', monospace;
+            float:right;
+            margin-top:25px;
+            margin-right:15px;
+        }
+        .line{
+            clear:both;
+            border-top: solid 2px silver;
+        }
+        aside{
+            clear:both;
+            font-family: 'Noto Sans KR', sans-serif;
+            width:165px;
+            height:410px;
+            float:left;
+            margin:30px 10px 10px 10px;
+            padding:2px;
+            border:solid 3px silver;
+            text-align:center;
+        }
+        .menu{
+            margin:0;
+            padding:8px;
+            border-bottom:solid 2px rgba(192,192,192,0.3);
+        }
+        .footerimg{
+            width:150px;
+            height:70px;
+        }
+        #img{
+            text-align:center;
+        }
+        a{ 
+            text-decoration:none;
+            color:black;
+        } 
+        .imgsize{
+            margin-top:30px;
+            width:800px;
+            height:533px;
+        }
+        .explain{
+            text-align:center;
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="./hw07.html">Miso's Homecafe</a></h1>
+    <header>
+        <div class="info"><a href="./shoppinglist.html">장바구니</a>/<a href="./login.html">로그인</a>/<a href="./join.html">
+        회원가입</a></div>
+        <div class="line"></div>
+    </header>
+    <aside>
+        <div id=item>
+            <section>
+                <a href="./food.html"><p class="menu">food</p></a>
+                <a href="./product.html"><p class="menu">product</p></a>
+                <a href="./customerservice.html"><p class="menu">고객센터</p></a>
+                <a href="./event.html"><p class="menu">event</p></a>
+                <a href="./review.html"><p class="menu">review</p></a>
+                <a href="./aboutus.html"><p class="menu">about us</p></a>
+                <p></p>
+                <a href="event.html"><img src="img/할부.jpg" class="footerimg"></a>
+                <a href="join.html"><img src="img/회원가입.jpg" class="footerimg"></a>
+            </section>
+        </div>
+    </aside>
+    <main>
+        <div id="img">
+            <img src="img/homecafe2.jpg" class="imgsize">
+        </div>
+        <div>
+            <p class="explain">코로나 19로 예민한 시기에 고객들이 안전하고 편안하게 홈카페를 즐길 수 있게 돕기 위해 존재합니다.</p>
+            <p class="explain">저희 쇼핑몰에서 홈카페용 음식과 제품을 구매하시고 안전한 홈카페를 즐기세요!</p>
+        </div>
+    </main>
+</body>
+</html>

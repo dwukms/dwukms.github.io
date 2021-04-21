@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miso's Homecafe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <style>
+        @media(max-width:768px){
+            body{
+                display: none;
+            }
+        }
+        body{
+            margin:0;
+        }
+        h1{
+            font-size:40px;
+            font-family: 'Pacifico', cursive;
+            float:left;
+            margin:30px 10px 22px 10px;
+            padding:5px;
+        }
+        .info{
+            font-family: 'Nanum Gothic Coding', monospace;
+            float:right;
+            margin-top:25px;
+            margin-right:15px;
+        }
+        .line{
+            clear:both;
+            border-top: solid 2px silver;
+        }
+        a{ 
+            text-decoration:none;
+            color:black;
+        } 
+        aside{
+            clear:both;
+            font-family: 'Noto Sans KR', sans-serif;
+            width:165px;
+            height:410px;
+            float:left;
+            margin:30px 10px 10px 10px;
+            padding:2px;
+            border:solid 3px silver;
+            text-align:center;
+        }
+        .menu{
+            margin:0;
+            padding:8px;
+            border-bottom:solid 2px rgba(192,192,192,0.3);
+        }
+        .footerimg{
+            width:150px;
+            height:70px;
+        }
+        .table{
+            float:left;
+            border:solid 2px;
+            width:1000px;
+            height:500px;
+            margin:40px 10px 10px 150px;
+        }
+        .start{
+            background-color:silver;
+            color:white;
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size:20px;
+            text-align:center;
+            padding:20px 0px;
+            border-bottom:solid 2px;
+        }
+        input{
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size:16px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="./hw07.html">Miso's Homecafe</a></h1>
+            <div class="info"><a href="./shoppinglist.html">장바구니</a>/<a href="./login.html">로그인</a>/<a href="./join.html">
+            회원가입</a></div>   
+        <div class="line"></div>   
+    </header>
+    <aside>
+        <div id=item>
+            <section>
+                <a href="./food.html"><p class="menu">food</p></a>
+                <a href="./product.html"><p class="menu">product</p></a>
+                <a href="./customerservice.html"><p class="menu">고객센터</p></a>
+                <a href="./event.html"><p class="menu">event</p></a>
+                <a href="./review.html"><p class="menu">review</p></a>
+                <a href="./aboutus.html"><p class="menu">about us</p></a>
+                <p></p>
+                <a href="event.html"><img src="img/할부.jpg" class="footerimg"></a>
+                <a href="join.html"><img src="img/회원가입.jpg" class="footerimg"></a>
+            </section>
+        </div>
+    </aside>
+    <main>
+        <div class="table">
+            <section class="start">
+                질문 쓰기
+            </section>
+            <section>
+                <form>
+                    <textarea rows="26.5" cols="135"></textarea>
+                    <p></p>
+                    <input type="submit" value="제출">
+                    <input type="reset" value="다시 작성">
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

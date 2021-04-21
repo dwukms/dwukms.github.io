@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>smoothie</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <style>
+        @media(max-width:768px){
+            body{
+                display: none;
+            }
+        }
+        body{
+            margin:0;
+        }
+        h1{
+            font-size:40px;
+            font-family: 'Pacifico', cursive;
+            float:left;
+            margin:30px 10px 22px 10px;
+            padding:5px;
+        }
+        .info{
+            font-family: 'Nanum Gothic Coding', monospace;
+            float:right;
+            margin-top:25px;
+            margin-right:15px;
+        }
+        #menu{
+            font-family: 'Noto Sans KR', sans-serif;
+            clear:both;
+            text-align:left;
+            font-size:20px;
+        }
+        #menu ul{
+            list-style-type:none;
+            padding: 5px 0;
+            margin: 0 0 30px 0;
+            border:1.5px solid silver;
+        }
+        #menu li{
+            display:inline;
+            list-style-type:none;
+            color:black;
+        }
+        #item{
+            margin:0 88.1px 0 88.1px;
+        }
+        a{ 
+            text-decoration:none;
+            color:black;
+        } 
+        #img{
+            margin:10px;
+            padding:10px;
+            float:left;
+            width:500px;
+            height:400px;
+        }
+        .button{
+            margin-top:15px;
+        }
+        .price{
+            padding:10px 20px 10px 20px;
+            margin:10px 20px 10px 20px;
+        }
+        #select{
+            padding:20px 20px 5px 20px;
+            margin:0 20px 5px 20px;
+        }
+        #head{
+            font-weight: bold;
+            font-size:20px;
+            margin:20px 20px 20px 20px;
+            padding:20px 20px 20px 20px;
+        }
+        #smoothie {
+            padding-right:600px
+        }
+        #smoothie li{
+            list-style-type:none;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .button button{
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="./hw07.html">Miso's Homecafe</a></h1>
+    <div>
+        <div class="info"><a href="./shoppinglist.html">장바구니</a>/<a href="./login.html">로그인</a>/<a href="./join.html">
+        회원가입</a></div>
+        <div id="menu">
+            <ul>
+                <li id="item"><a href="./food.html">food</a></li>
+                <li>|</li>
+                <li id="item"><a href="./product.html">product</a></li>
+                <li>|</li>
+                <li id="item"><a href="./customerservice.html">고객센터</a></li>
+                <li>|</li>
+                <li id="item"><a href="./event.html">event</a></li>
+                <li>|</li>
+                <li id="item"><a href="./review.html">review</a></li>
+                <li>|</li>
+                <li id="item"><a href="./aboutus.html">about us</a></li>
+            </ul>
+        </div>
+        <div id="smoothie">
+            <ul>
+                <img src="./img/스무디.jpg" id="img">
+                <li id="head"><냉동 스무디></li>
+                <li>믹서기로 갈아주면 바로 스무디가 되는 냉동 스무디입니다.
+                    여러 가지 맛이 있으니 기호에 맞게 구매해주세요. 더 자세한
+                    문의사항은 고객센터로 문의해주세요.
+                </li>
+                <li id="select">
+                    <form>
+                        <label>맛 선택
+                            <select name="favor">
+                                <option>딸기</option>
+                                <option>바나나</option>
+                                <option>블루베리</option>
+                                <option>초코</option>
+                                <option>녹차</option>
+                            </select>
+                        </label>
+                        <p></p>
+                        <label>수량: 
+                            <input type="text" name="number"> 개
+                        </label>
+                    </form>
+                </li>
+                <li id="select">배송 예정일: 주문 후 3-7일 이내</li>
+                <li class="price">가격: 5000won</li>
+                <li class="button">
+                    <form>
+                        <button type="submit">장바구니에 담기</button>
+                        <button type="submit">바로 주문하기</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .thumbnail{
+            width:150px;
+            height:150px;
+            margin:10px;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-color:gray;
+            background-position: center center;
+        }
+        .thumbnail.round{
+            border-radius: 20px;
+
+        }
+        .thumbnail.circle{
+            border-radius:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbnail" style="background-image: url('./../hw06/img/원두.jpg')">
+    </div>
+    <div class="thumbnail round" style="background-image: url('./../hw06/img/원두.jpg')">
+    </div>
+    <div class="thumbnail circle" style="background-image: url('./../hw06/img/원두.jpg')">
+    </div>
+    <img src="./../hw06/img/원두.jpg" alt="">
+</body>
+</html>
